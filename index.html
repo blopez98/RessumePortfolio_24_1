@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background: linear-gradient(135deg, #000000, #1a1a1a); /* Black gradient background */
+            color: #ffdfe3; /* Soft pink text */
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Header Section Styling */
+        header {
+            margin-top: 30px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            color: #ffb6c1; /* Light pink heading */
+            margin: 10px 0;
+        }
+
+        #tagline {
+            font-size: 1.5rem;
+            color: #ffb6c1; /* Light pink text */
+            margin-bottom: 20px;
+        }
+
+        #profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #ffb6c1; /* Light pink border */
+            box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+            object-fit: cover;
+            margin-top: 10px;
+        }
+
+        /* Intro Section Styling */
+        .intro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .intro-content {
+            max-width: 800px;
+            background: rgba(255, 182, 193, 0.1); /* Transparent pink */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(255, 182, 193, 0.2);
+            backdrop-filter: blur(5px); /* Glassmorphism */
+            line-height: 1.8;
+        }
+
+        .intro-content h1 {
+            font-size: 2.5rem;
+            color: #ffb6c1; /* Light pink heading */
+        }
+
+        .intro-content p {
+            font-size: 1.2rem;
+            color: #ffffff; /* White text */
+        }
+
+        /* Button Styling */
+        .button {
+            display: inline-block;
+            background-color: #ffb6c1;
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(255, 182, 193, 0.3);
+        }
+
+        .button:hover {
+            background-color: #ffffff;
+            color: #ffb6c1;
+            transform: translateY(-3px);
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            background-color: #ffb6c1;
+            color: #000000;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffffff;
+            color: #ffb6c1;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Hey, I'm Britney.</h1>
+        <p id="tagline">"A fourth-year Undergraduate Computer Science Major"</p>
+        <img src="images/mypicture.png" alt="Britney Lopez" id="profile-pic">
+    </header>
+
+    <!-- Introductory Section -->
+    <section class="intro">
+        <div class="intro-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>
+                I'm <strong>Britney Lopez</strong>—a creative problem-solver merging code with design to build an appealing 
+                digital experience when learning about me. I love turning ideas into clean, functional, and aesthetic websites.
+            </p>
+            <p>With any task I also mix in a little bit of fun into everything I create.</p>
+            <a href="about.html" class="button">Learn More About Me</a>
+        </div>
+    </section>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

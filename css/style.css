@@ -1,0 +1,487 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffdfe3;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+  
+    color: #ffb6c1; /* Light pink heading */
+    font-size: 2.5rem;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+/* Bottom Navigation Styling */
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Black background */
+    text-align: center; /* Center-align links */
+    padding: 10px 0; /* Padding for spacing */
+    z-index: 100; /* Keeps it on top */
+}
+
+
+nav ul {
+    list-style: none;          /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;           /* Display links horizontally */
+    margin: 0 15px;            /* Add spacing between links */
+}
+
+nav ul li a {
+    display: inline-block; /* Makes links behave like buttons */
+    background-color: #ffb6c1; /* Light pink background */
+    padding: 10px 15px; /* Add padding for button shape */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none;     /* Remove underline */
+    font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+    color: #000000;            /* black text color */
+    font-size: 16px;           /* Font size */
+    font-weight: bold;         /* Make text bold */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #ffb6c1; /* Light pink text on hover */
+    border: 1px solid #ffb6c1; /* Add a pink border on hover */
+}
+
+a.resume-link {
+    display: inline-block;
+    background-color: #ffb6c1; /* Light pink */
+    color: #000000; /* Black text */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a.resume-link:hover {
+    background-color: #ffffff; /* White on hover */
+    color: #ffb6c1; /* Light pink text */
+    border: 1px solid #ffb6c1;
+}
+
+/* Center Follow Me Section */
+.follow-me {
+    text-align: center;
+    margin-top: 40px; /* Add space above the section */
+    color:#ffffff
+}
+
+/* Center the Social Buttons */
+.social-links {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    gap: 15px; /* Spacing between buttons */
+    margin-top: 10px;
+}
+
+/* Styling for Follow Me Links (GitHub, LinkedIn, etc.) */
+.social-links a {
+    display: inline-block; /* Makes links behave like buttons */
+    background-color: #ffb6c1; /* Light pink background */
+    color: #000000; /* Black text color */
+    padding: 10px 15px; /* Add padding for button-like appearance */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    margin-right: 10px; /* Spacing between buttons */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+.social-links a:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #ffb6c1; /* Light pink text on hover */
+    border: 1px solid #ffb6c1; /* Pink border on hover */
+    transform: translateY(-3px);
+}
+
+/* Contact Section Container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    padding-bottom: 120px;
+    background-color: #000000; /* Ensure black background */
+}
+
+/* Contact Section Heading */
+.contact-container h1 {
+    font-size: 2.5rem;
+    color: #ffb6c1; /* Light pink */
+    margin-bottom: 20px;
+}
+
+/* Center Contact Me Heading */
+h1 {
+    text-align: center;
+    color: #ffb6c1; /* Light pink for aesthetic */
+
+}
+
+/* Contact Form Container & Styling */
+.contact-form {
+    display: flex;
+    gap: 20px; /* Adds spacing between inputs */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+
+    margin: 20px auto; /* Center form on page */
+    width: 100%;
+    max-width: 500px; /* Set form max width */
+    background-color: rgba(255,182,193, 0.2); /*Transparent pink*/
+    border-radius: 10px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.5); /* Light pink shadow */
+}
+
+/* Contact Form Labels */
+.contact-form label {
+    color: #ffb6c1; /* Light pink text */
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Contact Form Inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ffb6c1; /* Pink border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.9); /* Light white with transparency */
+    color: #333; /* White text color */
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #ffb6c1; /* Pink outline on focus */
+}
+
+/* Send Button Styling */
+.send-button {
+    background: linear-gradient(135deg, #ffb6c1, #ffa0b7);
+    color: #000000; /* Black text */
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 182, 193, 0.5);
+}
+
+.send-button:hover {
+    background: #ffffff; /* White background on hover */
+    color: #ffb6c1; /* Pink text on hover */
+    transform: translateY(-3px); /* Subtle lift */
+}
+
+.contact-form button {
+    background-color: #ffb6c1; /* Light pink */
+    color: #000000; /* Black text */
+    padding: 10px 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #ffb6c1; /* Pink text */
+    border: 1px solid #ffb6c1; /* Add a pink border */
+}
+
+/* Success Page Styling */
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Center content vertically */
+    text-align: center;
+    color: #ffb6c1; /* Light pink */
+}
+
+.success-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffb6c1; /* Light pink heading */
+}
+
+.success-container p {
+    font-size: 1.2rem;
+    color: #ffffff; /* White text */
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    background-color: #ffb6c1; /* Light pink button */
+    color: #000000; /* Black text */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffffff; /* White on hover */
+    color: #ffb6c1; /* Pink text on hover */
+    border: 1px solid #ffb6c1;
+}
+
+/* Projects Page Styling */
+
+/* Project Page Layout */
+.project-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Image Container */
+.project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Project Images */
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3); /* Light pink shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.project {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgba(255, 182, 193, 0.4); /* Light pink border */
+    border-radius: 10px;
+    background-color: rgba(255, 182, 193, 0.1); /* Transparent pink background */
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+    max-width: 800px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ffb6c1; /* Light pink */
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #ffffff; /* White on hover */
+}
+
+/* Hover Effect */
+.project-image:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 6px 12px rgba(255, 182, 193, 0.5); /* Deeper shadow on hover */
+}
+
+/* Content Box Styling */
+.project-content {
+    background-color: rgba(255, 182, 193, 0.1); /* Light transparent pink */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+/* Section Headings */
+.project-content h2 {
+    color: #ffb6c1; /* Light pink headings */
+    margin-bottom: 10px; /* Reduce margin below headings */
+    font-size: 1.8rem;
+}
+
+/* Paragraph and List Styling */
+.project-content p {
+    font-size: 1.1rem;
+    color: #ffffff; /* White text */
+    line-height: 1.6; /* Reduce line spacing for compact text */
+}
+
+.project-content ul {
+    list-style-type: square;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+/* Back Button Styling for project page */
+.button {
+    display: inline-block;
+    background-color: #ffb6c1;
+    color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #ffb6c1;
+    border: 1px solid #ffb6c1;
+    transform: translateY(-3px);
+}
+
+
+.project p {
+    font-size: 1rem;
+    color: #ffffff; /* White text */
+    line-height: 1.6;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Hover Effect */
+.project-image:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 6px 12px rgba(255, 182, 193, 0.5); /* Deeper shadow on hover */
+}
+
+/* About Section Styling */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #ffdfe3;
+    padding-bottom: 100px;
+}
+
+.about-section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(255, 182, 193, 0.1); /* Transparent pink background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3); /* Light pink shadow */
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #ffb6c1; /* Light pink heading */
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff; /* White text */
+}
+
+.resume-link {
+    margin-top: 20px;
+}
+
+.resume-link .button {
+    background-color: #ffb6c1;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resume-link .button:hover {
+    background-color: #ffffff;
+    color: #ffb6c1;
+    transform: translateY(-3px);
+}
+
+/* Skills Section Styling */
+.skills-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #ffdfe3;
+}
+
+.skills-section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(255, 182, 193, 0.1); /* Transparent pink background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3); /* Light pink shadow */
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    color: #ffb6c1; /* Light pink heading */
+
+}
+
+.skills-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #ffffff; /* White text */
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.skills-section ul li {
+    margin-bottom: 10px;
+}
+
+.skills-section ul li strong {
+    color: #ffb6c1; /* Highlight skill categories */
+}
